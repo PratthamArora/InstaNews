@@ -12,17 +12,18 @@
         android:layout_height="90dp"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/ic_launcher_round" />
 
     <TextView
         android:id="@+id/tvSource"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="SOURCE"
         android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivArticleImage" />
+        app:layout_constraintTop_toBottomOf="@+id/ivArticleImage"
+        tools:text="SOURCE" />
 
     <TextView
         android:id="@+id/tvTitle"
@@ -31,13 +32,13 @@
         android:layout_marginStart="8dp"
         android:ellipsize="end"
         android:maxLines="3"
-        android:text="TITLE"
         android:textColor="@android:color/black"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/ivArticleImage"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TITLE" />
 
     <TextView
         android:id="@+id/tvDescription"
@@ -47,20 +48,20 @@
         android:layout_marginTop="16dp"
         android:ellipsize="end"
         android:maxLines="5"
-        android:text="DESCRIPTION"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivArticleImage"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        tools:text="DESCRIPTION" />
 
     <TextView
         android:id="@+id/tvPublishedAt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="PUBLISHED AT"
         android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSource" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSource"
+        tools:text="PUBLISHED AT" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
