@@ -1,9 +1,8 @@
-package com.pratthamarora.instanews.ui
+package com.pratthamarora.instanews.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.pratthamarora.instanews.repo.NewsRepository
-import com.pratthamarora.instanews.ui.viewmodel.NewsViewModel
 
 class NewsViewModelProviderFactory(
     val newsRepository: NewsRepository

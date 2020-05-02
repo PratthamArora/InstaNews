@@ -1,4 +1,4 @@
-package com.pratthamarora.instanews.ui
+package com.pratthamarora.instanews.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,8 @@ import androidx.navigation.ui.setupWithNavController
 import com.pratthamarora.instanews.R
 import com.pratthamarora.instanews.data.db.ArticleDatabase
 import com.pratthamarora.instanews.repo.NewsRepository
-import com.pratthamarora.instanews.ui.viewmodel.NewsViewModel
+import com.pratthamarora.instanews.viewmodel.NewsViewModelProviderFactory
+import com.pratthamarora.instanews.viewmodel.NewsViewModel
 import kotlinx.android.synthetic.main.activity_news.*
 
 class NewsActivity : AppCompatActivity() {
@@ -20,7 +21,10 @@ class NewsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_news)
 
         val newsRepository = NewsRepository(ArticleDatabase(this))
-        val viewmModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
+        val viewmModelProviderFactory =
+            NewsViewModelProviderFactory(
+                newsRepository
+            )
         viewModel =
             ViewModelProvider(this, viewmModelProviderFactory).get(NewsViewModel::class.java)
 
