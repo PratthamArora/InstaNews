@@ -1,4 +1,4 @@
-package com.pratthamarora.instanews
+package com.pratthamarora.instanews.data.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

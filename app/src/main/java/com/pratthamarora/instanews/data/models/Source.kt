@@ -1,4 +1,4 @@
-package com.pratthamarora.instanews
+package com.pratthamarora.instanews.data.models
 
 data class Source(
     val id: Any,

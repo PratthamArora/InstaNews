@@ -1,6 +1,6 @@
 package com.pratthamarora.instanews.api
 
-import com.pratthamarora.instanews.NewsResponse
+import com.pratthamarora.instanews.data.models.NewsResponse
 import com.pratthamarora.instanews.utils.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET

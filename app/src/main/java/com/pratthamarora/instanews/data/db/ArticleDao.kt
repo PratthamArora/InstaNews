@@ -1,8 +1,8 @@
-package com.pratthamarora.instanews.db
+package com.pratthamarora.instanews.data.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.pratthamarora.instanews.Article
+import com.pratthamarora.instanews.data.models.Article
 
 @Dao
 interface ArticleDao {
